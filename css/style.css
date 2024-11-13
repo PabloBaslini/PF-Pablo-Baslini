@@ -1,0 +1,255 @@
+* {
+
+    list-style: none;
+    Margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(../img/helsinki.jpg );
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* header */
+
+.logo {
+
+    color: white;
+    padding: 15px;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.highlight-logo {
+
+    color: gold;
+
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: black;
+    position: sticky;
+    z-index: 1000;
+    align-items: center;
+}
+
+header nav div ul {
+
+    display: flex;
+
+}
+
+.item-box {
+
+    padding: 15px 5px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    font-family: "Oswald", sans-serif;
+
+}
+
+/* hero */
+
+.hero {
+
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.hero div h1 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.titulo {
+
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.highlight {
+
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    color: yellow;
+    padding: 10px;
+}
+
+.lorem {
+
+    font-size: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: black;
+    
+}
+
+/* grid */
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 20px;
+    padding: 50px;
+}
+
+.grid-item h3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.img-grid {
+
+    height: 292px;
+    width: 381px;
+    border-radius: 5%;
+
+}
+
+/* tarjetas de producto */
+
+.contenedor {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 55px;
+
+}
+
+.titulo {
+
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+
+}
+
+
+.tarjeta {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 389px;
+    border-radius: 15px;
+    background-color: white;
+
+}
+
+
+.card-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin-bottom: -57px;
+}
+
+.cuerpo {
+
+    padding: 10px;
+    flex: 1 1 100%;
+    align-self: center;
+
+}
+
+.cuerpo img {
+
+    border-radius: 5%;
+    margin-bottom: 27px;
+}
+
+.pie {
+
+    background: black;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.pie a {
+
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", sans-serif;
+
+}
+
+/* footer */
+
+.button-footer {
+    background-color: grey;
+    color: white;
+    padding: 3px 14px;
+    height: 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: auto;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.footer-down {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-left: 10px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+    margin-top: 52px;
+    align-items: flex-start;
+
+}
+
+.footer-down {
+    background-color: black;
+}
