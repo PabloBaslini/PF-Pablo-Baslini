@@ -19,7 +19,32 @@
 <body>
 
     <header>
-        <h2 class="logo">P<span class="highlight-logo">D</span>I</h2>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">P<span class="highlight-logo">D</span>I</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">inicio</a>
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                                <a class="nav-link" href="./servicios.html">Servicios</a>
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--<h2 class="logo">P<span class="highlight-logo">D</span>I</h2>
         <nav>
             <div>
                 <ul>
@@ -30,7 +55,7 @@
                     <li><a class="item-box" href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>-->
     </header>
 
     <main>
@@ -73,7 +98,7 @@
                                 <textarea class="form-control" id="mensaje" rows="4" required></textarea>
                             </div>
                             <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                                <button type="submit" class="btn btn-secondary">Enviar mensaje</button>
                                 <a href="https://wa.me/5493764390808" class="btn btn-success">
                                     <i class="fab fa-whatsapp me-2"></i>Contactar por WhatsApp
                                 </a>

@@ -18,7 +18,35 @@
 
 <body>
     <header>
-        <h2 class="logo">P<span class="highlight-logo">D</span>I</h2>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">P<span class="highlight-logo">D</span>I</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">inicio</a>
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                                <a class="nav-link" href="./servicios.html">Servicios</a>
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--<h2 class="logo">P<span class="highlight-logo">D</span>I</h2>
         <nav class="items">
             <div class="lista">
                 <ul>
@@ -29,49 +57,45 @@
                     <li><a class="item-box" href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
+        </nav>-->
     </header>
 
     <main>
         <section class="hero">
-
-            <p class="lorem">Somos una empresa familiar con 20 años de experiencia en el rubro de amoblamientos a
+            <p>Somos una empresa familiar con 20 años de experiencia en el rubro de amoblamientos a
                 medida y remodelación de viviendas, con un alto sentido estético y atención a los requerimientos de
                 cada cliente en particular.</p>
 
             <section class="card-nosotros">
-                <div class="row justify-content-evenly">
-                    <div class="col-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card">
-                            <img src="../img/dummy-profile-pic-300x300.jpg" class="img-thumbnail" alt="imagen Nahuel">
+                            <img src="../img/lu.jpg" class="img-thumbnail" alt="imagen Nahuel">
                             <div class="card-body">
-                                <p class="card-text">Soy carpintero, de tercera generacion, Trabajo en el taller con i
-                                    padre, y
-                                    juntos llevamos a abo los trabajos que nos encarguen los clientes en un ambiente de
-                                    armonia
-                                    y
-                                    eficiencia. Soy estudiante de Analisis de sistemas y fotografo Profesional.</p>
+                                <p class="card-text">Soy carpintero, de tercera generación. Trabajo en el taller con mi
+                                    padre, y juntos llevamos a cabo los trabajos que nos encargan los clientes en un
+                                    ambiente de
+                                    armonía y eficiencia. Soy estudiante de Análisis de sistemas y fotógrafo
+                                    Profesional.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="card">
-                            <img src="../img/dummy-profile-pic-300x300.jpg" class="img-thumbnail" alt="imagen Pablo">
+                            <img src="../img/yo.jpg" class="img-thumbnail" alt="imagen Pablo">
                             <div class="card-body">
-                                <p class="card-text">Soy carpintero de segunda generacion, amo la carpinteria como el
-                                    noble
-                                    oficio que es y trato de transmitirlo a las generaciones venideras para que no se
-                                    pierda
-                                    el
-                                    saber. Tambien soy aficionadfo a la fotografia y estudiante de Desarrollo web.</p>
+                                <p class="card-text">Soy carpintero de segunda generación, amo la carpintería como el
+                                    noble oficio que es y trato de transmitirlo a las generaciones venideras para que no
+                                    se
+                                    pierda el saber. También soy aficionado a la fotografía y estudiante de Desarrollo
+                                    web.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </section>
-
     </main>
     <footer class="footer-down">
         <div class="social-icons">

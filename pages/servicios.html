@@ -18,7 +18,35 @@
 
 <body>
     <header>
-        <h2 class="logo">P<span class="highlight-logo">D</span>I</h2>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">P<span class="highlight-logo">D</span>I</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">inicio</a>
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                                <a class="nav-link" href="./servicios.html">Servicios</a>
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--<h2 class="logo">P<span class="highlight-logo">D</span>I</h2>
         <nav class="items">
             <div class="lista">
                 <ul>
@@ -29,37 +57,36 @@
                     <li><a class="item-box" href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
+        </nav>-->
     </header>
 
     <main class="contenido-paginas">
         <section>
-            <h5 class="lorem-paginas">En nuestros talleres ofrecemos una diversa cantidad de servicios para terceros,
-                con la mayor agilidad, lo que optimiza sus proyecyos!
-            </h5>
+            <p>En nuestros talleres ofrecemos una diversa cantidad de servicios para terceros,
+                con la mayor agilidad, lo que optimiza sus proyectos!
+            </p>
         </section>
         <section>
-            <div>
-                <div class="grid-servicios">
-                    <div class="titulo-tarjetas">
-                        <h2>Corte de Tableros a medida</h2>
-                        <img src="../img/corte servicios.jpg" width=300px alt="corte">
-                        <div class="pie">
-                            <a href="../pages/contacto.html">contactenos</a>
-                        </div>
+            <div class="grid-servicios">
+                <div class="titulo-tarjetas">
+                    <h2>Corte de Tableros a medida</h2>
+                    <img src="../img/corte servicios.jpg" width=300px alt="corte">
+                    <div class="pie">
+                        <a href="../pages/contacto.html" class="btn btn-dark">Contáctenos</a>
                     </div>
-                    <div class="titulo-tarjetas">
-                        <h2>Canteado ABS de piezas</h2>
-                        <img src="../img/pegado servicios.jpg" width=300px alt="pegado">
-                        <div class="pie">
-                            <a href="../pages/contacto.html">contactenos</a>
-                        </div>
+                </div>
+                <div class="titulo-tarjetas">
+                    <h2>Canteado ABS de piezas</h2>
+                    <img src="../img/pegado servicios.jpg" width=300px alt="pegado">
+                    <div class="pie">
+                        <a href="../pages/contacto.html" class="btn btn-dark">Contáctenos</a>
                     </div>
-                    <div class="titulo-tarjetas">
-                        <h2>Maquinado de partes de muebles</h2>
-                        <img src="../img/maquinado sericios.jpg" width=300px alt="maquinado">
-                        <div class="pie">
-                            <a href="../pages/contacto.html">contactenos</a>
-                        </div>
+                </div>
+                <div class="titulo-tarjetas">
+                    <h2>Maquinado de partes de muebles</h2>
+                    <img src="../img/maquinado sericios.jpg" width=300px alt="maquinado">
+                    <div class="pie">
+                        <a href="../pages/contacto.html" class="btn btn-dark">Contáctenos</a>
                     </div>
                 </div>
             </div>
