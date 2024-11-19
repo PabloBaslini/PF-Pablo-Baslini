@@ -5,6 +5,7 @@
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 }
 
 /* header */
+
 
 .logo {
 
@@ -42,8 +44,10 @@ header {
     padding: 5px;
     background-color: black;
     position: sticky;
+    top: 0px;
     z-index: 1000;
     align-items: center;
+    font-family: "Oswald", sans-serif;
 }
 
 header nav div ul {
@@ -75,41 +79,32 @@ header nav div ul {
 
 .hero div h1 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
+    font-size: 35px;
 
 }
 
-.titulo {
-
-    font-size: 20px;
-    align-items: center;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    color: black;
-}
 
 .highlight {
 
-    font-size: 35px;
+
     align-items: center;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    font-size: 50px;
+    font-size: 90px;
     color: yellow;
     padding: 10px;
 }
 
 .lorem {
 
-    font-size: 10px;
     align-items: center;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: black;
-    
+
 }
 
 /* grid */
@@ -129,9 +124,6 @@ header nav div ul {
     align-items: center;
     flex-direction: column-reverse;
     color: black;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
 }
@@ -160,6 +152,7 @@ header nav div ul {
     color: black;
     font-family: "Oswald", sans-serif;
     font-size: 18px;
+    padding: 15px;
 
 }
 
@@ -172,6 +165,7 @@ header nav div ul {
     width: 389px;
     border-radius: 15px;
     background-color: white;
+    align-items: center;
 
 }
 
@@ -203,7 +197,7 @@ header nav div ul {
     border-radius: 0 0 15px 15px;
     padding: 10px;
     text-align: center;
-
+    width: 100%
 }
 
 .pie a {
@@ -213,6 +207,16 @@ header nav div ul {
     font-family: "Oswald", sans-serif;
 
 }
+
+/* tamaño y forma imagenes carrousel bootstrap*/
+
+.carousel-item > img {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 500px;
+}
+
 
 /* footer */
 
@@ -238,6 +242,7 @@ header nav div ul {
     justify-content: space-between;
     margin-top: 100px;
     padding-left: 10px;
+    background-color: black;
 }
 
 .social-icons {
@@ -250,6 +255,80 @@ header nav div ul {
 
 }
 
-.footer-down {
-    background-color: black;
+.lorem-paginas {
+
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 25px;
+    margin-top: 25px;
+
+}
+
+.grid-servicios {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 60px;
+    row-gap: 20px;
+    padding: 50px;
+    
+}
+
+.grid-servicios img {
+
+    height: 292px;
+    width: 381px;
+    border-radius: 5% 5% 0 0;
+
+}
+
+.titulo-tarjetas {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.grid-servicios h2 {
+
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+
+
+/* formulario de contacto*/
+
+.card {
+
+    border: none;
+    border-radius: 15px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/*pagina nosotros*/
+
+.card-nosotros{
+
+
 }
