@@ -23,19 +23,6 @@ body {
 /* header */
 
 
-/* .logo {
-
-    color: white;
-    padding: 15px;
-    font-family: "Oswald", sans-serif;
-
-}
-
-.highlight-logo {
-
-    color: gold;
-
-} */
 
 body header nav img {
     width: 90px;
@@ -79,6 +66,7 @@ header nav div ul {
 
     padding: 120px 30px 60px;
     text-align: center;
+    font-weight: bold;
 
 }
 
@@ -152,19 +140,6 @@ p {
     border-radius: 5%;
 
 }
-
-/* tarjetas de producto */
-
-/* .contenedor {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 55px;
-
-} */
 
 .titulo {
 
@@ -267,8 +242,7 @@ p {
     align-items: center;
     gap: 15px;
     margin-left: 15px;
-    margin-top: 52px;
-    align-items: flex-start;
+  
 
 }
 
