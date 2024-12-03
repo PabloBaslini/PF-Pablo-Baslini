@@ -23,7 +23,7 @@ body {
 /* header */
 
 
-.logo {
+/* .logo {
 
     color: white;
     padding: 15px;
@@ -35,8 +35,12 @@ body {
 
     color: gold;
 
-}
+} */
 
+body header nav img {
+    width: 90px;
+    height: 70px;
+}
 header {
 
     display: flex;
@@ -151,14 +155,16 @@ p {
 
 /* tarjetas de producto */
 
-.contenedor {
+/* .contenedor {
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
     gap: 55px;
 
-}
+} */
 
 .titulo {
 
@@ -171,16 +177,14 @@ p {
 
 
 .tarjeta {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 389px;
     border-radius: 15px;
     background-color: white;
     align-items: center;
-
 }
+
 
 
 .card-image {
@@ -207,7 +211,7 @@ p {
 .pie {
 
     background: black;
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px 15px 15px 15px;
     padding: 10px;
     text-align: center;
     width: 100%
@@ -438,10 +442,13 @@ p {
 }
 
 .cards-container .contenedor {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-top: 20px;
+    justify-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 .hero {
@@ -456,6 +463,11 @@ p {
 .hero p {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.contact-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* Media query para móviles (360px) */
@@ -496,6 +508,12 @@ p {
         width: 100%;
         height: 300px;
     }
+
+    /* Columnas pagina Contacto */
+    .contact-items{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Media query para tablets */
@@ -530,14 +548,14 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .titulo-tarjetas {
     text-align: center;
     padding: 15px;
     background-color: #f8f9fa;
-    border-radius: 8px;
+    border-radius: 8px; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -545,6 +563,7 @@ p {
     max-width: 100%;
     height: auto;
     margin: 15px 0;
+    border-radius: 10%;
 }
 
 /* Media query para móviles */
