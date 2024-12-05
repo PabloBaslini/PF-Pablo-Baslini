@@ -126,7 +126,7 @@ p {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+}  
 
 .grid-item h3 {
     margin-top: 15px;
@@ -423,6 +423,7 @@ p {
     justify-items: center;
     width: 80%;
     margin: auto;
+    overflow: hidden;
 }
 
 .hero {
@@ -451,7 +452,7 @@ p {
     }
 
     .cards-container .contenedor {
-        flex-direction: column;  /* Apilar tarjetas verticalmente */
+        grid-template-columns: 1fr;
     }
 
     .hero {
