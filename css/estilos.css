@@ -1,0 +1,174 @@
+* {
+  list-style: none;
+  margin: 1px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-image: url(../img/helsinki.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  align-items: center;
+}
+header nav img {
+  width: 90px;
+  height: 70px;
+}
+header nav div ul {
+  display: flex;
+}
+header .item-box {
+  padding: 15px 5px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.highlight {
+  align-items: center;
+  text-align: center;
+  font-size: 90px;
+  color: yellow;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding: 35px;
+}
+
+.contenido-paginas p {
+  margin-top: 25px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  align-items: center;
+}
+.tarjeta .card-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  margin-bottom: -57px;
+}
+.tarjeta .cuerpo {
+  padding: 10px;
+  flex: 1 1 100%;
+  align-self: center;
+}
+.tarjeta .cuerpo img {
+  border-radius: 5%;
+  margin-bottom: 27px;
+}
+.tarjeta .pie {
+  background: black;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+.tarjeta .pie a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-down {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-left: 10px;
+  background-color: black;
+}
+.footer-down .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 15px;
+}
+.footer .button-footer {
+  background-color: grey;
+  color: white;
+  padding: 3px 14px;
+  height: 33px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+@media (max-width: 360px) {
+  .hero h1 {
+    flex-wrap: wrap;
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 18px;
+    padding: 15px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+  .footer-down {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid-servicios {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    padding: 100px 20px 30px;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

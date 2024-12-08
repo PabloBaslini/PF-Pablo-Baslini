@@ -1,0 +1,30 @@
+.footer {
+    &-down {
+      display: flex;
+      height: 150px;
+      justify-content: space-between;
+      margin-top: 100px;
+      padding-left: 10px;
+      background-color: black;
+  
+      .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: 15px;
+      }
+    }
+  
+    .button-footer {
+      background-color: grey;
+      color: white;
+      padding: 3px 14px;
+      height: 33px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      margin: auto;
+    }
+  }
