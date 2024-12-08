@@ -1,0 +1,55 @@
+//lo de bootstrap (clases) se tiran sueltas en generales
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    align-items: center;
+
+    nav {
+      img {
+        width: 90px;
+        height: 70px;
+      }
+
+      div {
+        ul {
+          display: flex;
+        }
+      }
+    }
+
+    .item-box {
+      padding: 15px 5px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+  }
+
+  .highlight {
+    align-items: center;
+    text-align: center;
+    font-size: 90px;
+    color: yellow;
+    padding: 10px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 35px;
+  }
+
+  .contenido-paginas {
+    p {
+      margin-top: 25px;
+    }
+  }

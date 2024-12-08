@@ -1,0 +1,7 @@
+//los import van en orden de aparicion
+@import "./base/funcionalidades"; //variables, bucles, condicionales
+@import "./base/generales"; //reset, cosas sueltas, tipografia, lo que va en varias sections
+@import "./componentes/header";
+@import "./componentes/main"; //o los documentos (servicios, index, contacto
+@import "./componentes/footer";
+@import "./base/queries"; 
