@@ -1,40 +1,211 @@
 //bloques comentados
+body {
+  background-image: url(../img/helsinki.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+// tarjetitas
+
 .tarjeta {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15px;
-    background-color: white;
-    align-items: center;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  align-items: center;
+
   .card-image {
-      width: 300px;
-      height: 300px;
-      border-radius: 5%;
-      margin-bottom: -57px;
-    }
-  
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin-bottom: -57px;
+  }
+
   .cuerpo {
-      padding: 10px;
-      flex: 1 1 100%;
-      align-self: center;
-  
-      img {
-        border-radius: 5%;
-        margin-bottom: 27px;
-      }
-    }
-  
-  .pie {
-      background: black;
-      border-radius: 15px;
-      padding: 10px;
-      text-align: center;
-      width: 100%;
-  
-     a {
-        text-decoration: none;
-        color: white;
-      }
+    padding: 10px;
+    flex: 1 1 100%;
+    align-self: center;
+
+    img {
+      border-radius: 5%;
+      margin-bottom: 27px;
     }
   }
+
+  .pie {
+    background: black;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+
+//hero section
+
+.hero {
+
+  padding: 120px 30px 60px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.highlight {
+
+
+  align-items: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 90px;
+  color: yellow;
+  padding: 10px;
+}
+
+p {
+
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding: 35px;
+
+}
+
+.contenido-paginas p {
+
+  margin-top: 25px;
+}
+
+
+//grid section
+
+main {
+  .hero {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.grid-item {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+.img-grid {
+
+  height: 292px;
+  width: 381px;
+  border-radius: 5%;
+
+}
+
+.titulo {
+
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  padding: 15px;
+
+}
+
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  align-items: center;
+}
+
+
+
+.card-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  margin-bottom: -57px;
+}
+
+.cuerpo {
+
+  padding: 10px;
+  flex: 1 1 100%;
+  align-self: center;
+
+}
+
+.cuerpo {
+  img {
+
+    border-radius: 5%;
+    margin-bottom: 27px;
+  }
+}
+
+.pie {
+
+  background: black;
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%
+}
+
+.pie {
+  a {
+
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", sans-serif;
+
+  }
+}
+
+//tamaño y forma imagenes carrousel 
+
+.carousel-item {
+  img {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 500px;
+  }
+}

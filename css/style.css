@@ -513,7 +513,7 @@ p {
     padding: 20px;
 }
 
-.contenido-paginas p {
+.contenido-paginas h1 {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 40px;
