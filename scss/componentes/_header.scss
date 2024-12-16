@@ -1,0 +1,40 @@
+ // Header styles
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     padding: 5px;
+     background-color: black;
+     position: sticky;
+     top: 0px;
+     z-index: 1000;
+     align-items: center;
+     font-family: "Oswald", sans-serif;
+
+     nav {
+         img {
+             width: 90px;
+             height: 70px;
+         }
+
+         div {
+             ul {
+                 display: flex;
+             }
+         }
+     }
+ }
+
+
+ //Item box styles
+
+ .item-box {
+     padding: 15px 5px;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin-right: 5px;
+     font-family: "Oswald", sans-serif;
+ }

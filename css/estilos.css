@@ -16,7 +16,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-body header {
+
+header {
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -27,11 +28,11 @@ body header {
   align-items: center;
   font-family: "Oswald", sans-serif;
 }
-body header nav img {
+header nav img {
   width: 90px;
   height: 70px;
 }
-body header nav div ul {
+header nav div ul {
   display: flex;
 }
 

@@ -1,0 +1,33 @@
+.footer-down {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-left: 10px;
+    background-color: $color-black;
+  
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-left: 15px;
+    }
+  }
+  
+.button-footer {
+    background-color: $color-grey;
+    color: $color-white;
+    padding: 3px 14px;
+    height: 33px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: auto;
+  }
+  
+  
+    .footer-down {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
