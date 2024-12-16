@@ -1,4 +1,14 @@
 // Universal selector styles
+@import "./base/funcionalidades";
+@import "./base/generales";
+@import "./componentes/header"
+@import "./componentes/main";
+@import "./componentes/footer";
+@import "./base/queries;
+
+
+
+
 * {
     list-style: none;
     margin: 1px;
