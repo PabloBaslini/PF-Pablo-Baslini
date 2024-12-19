@@ -1,111 +1,113 @@
 .hero {
-    padding: 120px 30px 60px;
     text-align: center;
     font-weight: bold;
 
+    div{
+        margin: 0px 25px 0px 25px;
+    }
+
     h1 {
-      font-size: 3rem;
-      margin-bottom: 30px;
-      line-height: 1.2;
+        font-size: 3rem;
+        margin-bottom: 30px;
+        line-height: 1.2;
+
     }
 
     p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.6;
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
     }
 
     .highlight {
-      align-items: center;
-      text-align: center;
-      font-size: 90px;
-      color: $color-yellow;
-      padding: 10px;
+        align-items: center;
+        text-align: center;
+        font-size: 90px;
+        color:yellow;;
+        padding: 10px;
     }
-  }
+}
 
 
 // Grid styles
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 
-  &-item {
-    text-align: center;
-    padding: 15px;
-    background: $color-white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    &-item {
+        text-align: center;
+        padding: 15px;
+        background:white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    h3 {
-      margin-top: 15px;
-      font-size: 1.3rem;
+        h3 {
+            margin-top: 15px;
+            font-size: 1.3rem;
+        }
     }
-  }
 
-  .img-grid {
-    height: 292px;
-    width: 381px;
-    border-radius: 5%;
-  }
+    .img-grid {
+        height: 292px;
+        width: 381px;
+        border-radius: 5%;
+    }
 }
 
 // Tarjetas
 .tarjeta {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 15px;
-  background-color: $color-white;
-  align-items: center;
-
-  .card-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 5%;
-    margin-bottom: -57px;
-  }
-
-  .cuerpo {
-    padding: 10px;
-    flex: 1 1 100%;
-    align-self: center;
-
-    img {
-      border-radius: 5%;
-      margin-bottom: 27px;
-    }
-  }
-
-  .pie {
-    background: $color-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 15px;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
+    background-color: white;
+    align-items: center;
 
-    a {
-      text-decoration: none;
-      color: $color-white;
+    .card-image {
+        width: 300px;
+        height: 300px;
+        border-radius: 5%;
+        margin-bottom: -57px;
     }
-  }
+
+    .cuerpo {
+        padding: 10px;
+        flex: 1 1 100%;
+        align-self: center;
+
+        img {
+            border-radius: 5%;
+            margin-bottom: 27px;
+        }
+    }
+
+    .pie {
+        background: white;
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
-
-
 
 // Carousel styles
 .carousel-item {
-  > img {
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    height: 500px;
-  }
+    >img {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        height: 500px;
+    }
 }
 
 
@@ -130,25 +132,6 @@
         }
     }
 }
-// Hero section styles
-.hero {
-    padding: 120px 30px 60px;
-    text-align: center;
-    font-weight: bold;
-
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 30px;
-        line-height: 1.2;
-    }
-
-    p {
-        font-size: 1.2rem;
-        max-width: 800px;
-        margin: 0 auto;
-        line-height: 1.6;
-    }
-}
 
 // Highlight styles
 .highlight {
@@ -171,9 +154,6 @@ p {
         margin-top: 25px;
     }
 }
-
-// Grid container styles
-
 
 // Image grid styles
 .img-grid {
@@ -251,40 +231,6 @@ p {
     }
 }
 
-// Footer button styles
-.button-footer {
-    background-color: grey;
-    color: white;
-    padding: 3px 14px;
-    height: 33px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 4px;
-    margin: auto;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-// Footer down styles
-.footer-down {
-    display: flex;
-    height: 150px;
-    justify-content: space-between;
-    margin-top: 100px;
-    padding-left: 10px;
-    background-color: black;
-
-    .social-icons {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-left: 15px;
-    }
-}
-
 // Lorem paginas styles
 .lorem-paginas {
     text-align: center;
@@ -315,19 +261,23 @@ p {
         text-align: center;
         font-family: "Oswald", sans-serif;
         font-size: 20px;
-        color: black;
+        color: $color-black;
         padding: 25px;
         border-radius: 10px;
     }
+
+    .titulo-tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 15px;
+        background-color:$color-white;
+        border-radius: 15px;
+    }
 }
 
-// Card title styles
-.titulo-tarjetas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 // Card general styles
 .card {
@@ -367,3 +317,14 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+.lorem-paginas {
+
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 25px;
+    margin-top: 25px;
+}
+

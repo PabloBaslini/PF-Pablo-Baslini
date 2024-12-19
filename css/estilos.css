@@ -1,8 +1,4 @@
 * {
-  list-style: none;
-  margin: 1px;
-  padding: 0px;
-  text-decoration: none;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
 }
@@ -15,6 +11,43 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+body main {
+  margin-top: 100px;
+}
+
+.titulo-paginas {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+}
+
+#alineacion {
+  margin: 0% 10% 5% 10%;
+}
+
+.pie {
+  margin-top: 5%;
+}
+
+.promociones {
+  width: 12rem;
+  height: 12rem;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-left: 20%;
+  margin-top: 20%;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transform: rotate(-45deg);
 }
 
 header {
@@ -48,9 +81,11 @@ header nav div ul {
 }
 
 .hero {
-  padding: 120px 30px 60px;
   text-align: center;
   font-weight: bold;
+}
+.hero div {
+  margin: 0px 25px 0px 25px;
 }
 .hero h1 {
   font-size: 3rem;
@@ -63,24 +98,79 @@ header nav div ul {
   margin: 0 auto;
   line-height: 1.6;
 }
-
-.highlight {
+.hero .highlight {
   align-items: center;
   text-align: center;
-  font-family: "Oswald", sans-serif;
   font-size: 90px;
   color: yellow;
   padding: 10px;
 }
 
-p {
-  text-align: center;
-  font-size: 30px;
-  color: black;
-  padding: 35px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-p.contenido-paginas {
-  margin-top: 25px;
+.grid-item {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.grid-item h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+.grid .img-grid {
+  height: 292px;
+  width: 381px;
+  border-radius: 5%;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: white;
+  align-items: center;
+}
+.tarjeta .card-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  margin-bottom: -57px;
+}
+.tarjeta .cuerpo {
+  padding: 10px;
+  flex: 1 1 100%;
+  align-self: center;
+}
+.tarjeta .cuerpo img {
+  border-radius: 5%;
+  margin-bottom: 27px;
+}
+.tarjeta .pie {
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+.tarjeta .pie a {
+  text-decoration: none;
+  color: white;
+}
+
+.carousel-item > img {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  height: 500px;
 }
 
 .grid {
@@ -101,6 +191,25 @@ p.contenido-paginas {
 .grid-item h3 {
   margin-top: 15px;
   font-size: 1.3rem;
+}
+
+.highlight {
+  align-items: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 90px;
+  color: yellow;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  padding: 35px;
+}
+p.contenido-paginas {
+  margin-top: 25px;
 }
 
 .img-grid {
@@ -168,37 +277,6 @@ p.contenido-paginas {
   height: 500px;
 }
 
-.button-footer {
-  background-color: grey;
-  color: white;
-  padding: 3px 14px;
-  height: 33px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  margin: auto;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.footer-down {
-  display: flex;
-  height: 150px;
-  justify-content: space-between;
-  margin-top: 100px;
-  padding-left: 10px;
-  background-color: black;
-}
-.footer-down .social-icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-left: 15px;
-}
-
 .lorem-paginas {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -230,12 +308,15 @@ p.contenido-paginas {
   padding: 25px;
   border-radius: 10px;
 }
-
-.titulo-tarjetas {
+.grid-servicios .titulo-tarjetas {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
 }
 
 .card {
@@ -270,31 +351,43 @@ p.contenido-paginas {
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 360px) {
-  .body {
-    max-width: 360px;
-    align-items: center;
-    overflow-x: hidden;
-  }
-  .body .hero div h1 {
-    flex-wrap: wrap;
-    font-size: 24px;
-  }
-  .body .hero .highlight {
-    font-size: 40px;
-    padding: 5px;
-  }
-  .body .hero p {
-    font-size: 18px;
-    padding: 15px;
-  }
-  .body .hero .grid {
-    grid-template-columns: 1fr;
-    padding: 20px;
-    gap: 20px;
-  }
-  .body .hero .grid-item h3 {
-    font-size: 16px;
-    margin-top: 10;
-  }
+.lorem-paginas {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: black;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.footer-down {
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-left: 10px;
+  background-color: black;
+}
+.footer-down .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 15px;
+}
+
+.button-footer {
+  background-color: grey;
+  color: white;
+  padding: 3px 14px;
+  height: 33px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: auto;
+}
+
+.footer-down {
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
 }/*# sourceMappingURL=estilos.css.map */
