@@ -1,25 +1,22 @@
-* {
-  box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
-}
-
 body {
-  background-image: url(../img/helsinki.jpg);
-  width: 100%;
-  height: auto;
+  background-image: url("../img/helsinki.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
+  height: auto;
 }
+
 body main {
   margin-top: 100px;
 }
 
 .titulo-paginas {
-  font-size: 40px;
   text-align: center;
-  color: black;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
 }
 
 #alineacion {
@@ -30,24 +27,101 @@ body main {
   margin-top: 5%;
 }
 
-.promociones {
-  width: 12rem;
-  height: 12rem;
-  background-color: yellow;
-  border-radius: 50%;
-  margin-left: 20%;
-  margin-top: 20%;
-  position: absolute;
-  z-index: 10;
-  box-shadow: 0 4px 10px rgb(0, 0, 0);
+header {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #000;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+header nav img {
+  width: 90px;
+  height: 70px;
+}
+
+header nav div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-box {
+  padding: 15px 5px;
   text-align: center;
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.hero {
+  text-align: center;
+  font-size: 16px;
   color: black;
-  font-size: 1.6rem;
+  font-weight: normal;
   font-weight: bold;
-  transform: rotate(-45deg);
+}
+
+.hero div {
+  margin: 0px 25px 0px 25px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hero .highlight {
+  text-align: center;
+  font-size: 90px;
+  color: #ff0;
+  font-weight: normal;
+  padding: 10px;
+}
+
+.tarjeta .pie {
+  background: black;
+  border-radius: 0px 0px 15px 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.tarjeta .pie a {
+  text-decoration: none;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.button-footer {
+  background-color: grey;
+  color: white;
+  padding: 3px 14px;
+  height: 33px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 header {
@@ -193,13 +267,28 @@ header nav div ul {
   font-size: 1.3rem;
 }
 
-.highlight {
-  align-items: center;
+body {
+  font-family: Arial, sans-serif;
   text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 90px;
-  color: yellow;
-  padding: 10px;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.highlight {
+  font-weight: bold;
+  padding: 0.2em 0.4em;
+  border-radius: 5px;
+  display: inline-block;
+  transition: transform 0.3s ease, font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.highlight:hover {
+  transform: scale(2);
+  font-size: 4.5em;
 }
 
 p {
@@ -277,6 +366,45 @@ p.contenido-paginas {
   height: 500px;
 }
 
+.promociones {
+  width: 12rem;
+  height: 12rem;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-left: 20%;
+  margin-top: 20%;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: bold;
+  transform: rotate(-45deg);
+}
+
+.promociones:hover {
+  transform: rotate(0deg) scale(1.1);
+  background-color: orange;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  animation: backwards;
+}
+
+@keyframes hover-shine {
+  0% {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 8px 20px rgba(255, 165, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+}
 .lorem-paginas {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -349,6 +477,7 @@ p.contenido-paginas {
 .contact-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 25px;
 }
 
 .lorem-paginas {
@@ -358,6 +487,11 @@ p.contenido-paginas {
   color: black;
   padding: 25px;
   margin-top: 25px;
+}
+
+section div div div div article .card-text {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .footer-down {
@@ -390,4 +524,181 @@ p.contenido-paginas {
   flex-direction: row;
   gap: 20px;
   align-items: center;
+}
+
+/* (360px) */
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
+  .titulo-paginas {
+    font-size: 28px;
+  }
+  .promociones {
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.2rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+  .grid-item {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  header nav img {
+    width: 60px;
+    height: 50px;
+  }
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 30px;
+    padding: 15px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .card {
+    border: none;
+    border-radius: 15px;
+  }
+  .card-nosotros {
+    padding: 0px;
+  }
+  .card .card-body {
+    padding: 0px;
+  }
+  .card-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .footer-down {
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-left: 10px;
+    background-color: black;
+  }
+  .footer-down .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+  .footer-down iframe {
+    margin-top: 15px;
+    width: 360px;
+  }
+  .contact-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .button-footer {
+    background-color: grey;
+    color: white;
+    padding: 3px 14px;
+    height: 33px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: auto;
+  }
+  .footer-down {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .promociones {
+    display: none;
+  }
+  .carousel-inner img {
+    height: 180px;
+    object-fit: cover;
+  }
+  .grid-servicios {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+    margin: 25px auto;
+    gap: 20px;
+    padding: 0%;
+  }
+  .titulo-tarjetas {
+    width: 100%;
+    padding: 5px;
+  }
+  .titulo-tarjetas img {
+    max-width: 100%;
+  }
+  .btn {
+    padding: 8px 12px;
+  }
+  .titulo-paginas {
+    padding: 5px;
+  }
+  .card-body {
+    padding: 8px;
+  }
+}
+/* (768px) */
+@media screen and (min-width: 361px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .titulo-paginas {
+    font-size: 32px;
+  }
+  .promociones {
+    width: 11rem;
+    height: 11rem;
+    font-size: 1.4rem;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+  }
+  .grid-item {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  header nav img {
+    width: 75px;
+    height: 60px;
+  }
+}
+/* (1440px) */
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+  .titulo-paginas {
+    font-size: 48px;
+  }
+  .promociones {
+    width: 14rem;
+    height: 14rem;
+    font-size: 1.8rem;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 50px;
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+  header nav img {
+    width: 120px;
+    height: 90px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

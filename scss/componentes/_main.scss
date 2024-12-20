@@ -2,7 +2,7 @@
     text-align: center;
     font-weight: bold;
 
-    div{
+    div {
         margin: 0px 25px 0px 25px;
     }
 
@@ -24,13 +24,14 @@
         align-items: center;
         text-align: center;
         font-size: 90px;
-        color:yellow;;
+        color: yellow;
+        ;
         padding: 10px;
     }
 }
 
 
-// Grid styles
+// Grid 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,7 +43,7 @@
     &-item {
         text-align: center;
         padding: 15px;
-        background:white;
+        background: white;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -100,7 +101,7 @@
     }
 }
 
-// Carousel styles
+// Carousel
 .carousel-item {
     >img {
         margin-left: 15%;
@@ -133,17 +134,37 @@
     }
 }
 
-// Highlight styles
-.highlight {
-    align-items: center;
+//Animacion palabra DESIGN  
+
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 90px;
-    color: yellow;
-    padding: 10px;
+    margin-top: 50px;
 }
 
-// Paragraph styles
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.highlight {
+    font-weight: bold;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, font-size 0.3s ease, background-color 0.3s ease;
+}
+
+
+.highlight:hover {
+    transform: scale(2); 
+    font-size: 4.5em; 
+
+}
+
+
+// Parrrafo
+
 p {
     text-align: center;
     font-size: 30px;
@@ -155,14 +176,14 @@ p {
     }
 }
 
-// Image grid styles
+// Imagenes grid 
 .img-grid {
     height: 292px;
     width: 381px;
     border-radius: 5%;
 }
 
-// Title styles
+// Titulo
 .titulo {
     color: rgb(10, 10, 10);
     font-family: "Oswald", sans-serif;
@@ -221,7 +242,7 @@ p {
     }
 }
 
-// Carousel item styles
+// Carousel item 
 .carousel-item {
     >img {
         margin-left: 15%;
@@ -231,7 +252,42 @@ p {
     }
 }
 
-// Lorem paginas styles
+.promociones {
+    width: 12rem;
+    height: 12rem;
+    background-color: $color-promo;
+    @include border-radius(50%);
+    margin-left: 20%;
+    margin-top: 20%;
+    position: absolute;
+    z-index: 10;
+    @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 1));
+    @include flex-center;
+    @include text-center(1.6rem, $color-texto, bold);
+    transform: rotate(-45deg);
+  }
+
+  .promociones:hover {
+    transform: rotate(0deg) scale(1.1); 
+    background-color: orange; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: backwards;
+  }
+
+  @keyframes hover-shine {
+    0% {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      box-shadow: 0 8px 20px rgba(255, 165, 0, 0.8);
+    }
+    100% {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+// Lorem paginas 
 .lorem-paginas {
     text-align: center;
     font-family: "Oswald", sans-serif;
@@ -241,7 +297,8 @@ p {
     margin-top: 25px;
 }
 
-// Service grid styles
+// Grid servicios
+
 .grid-servicios {
     display: grid;
     width: 100%;
@@ -273,13 +330,13 @@ p {
         flex-wrap: wrap;
         text-align: center;
         padding: 15px;
-        background-color:$color-white;
+        background-color: $color-white;
         border-radius: 15px;
     }
 }
 
 
-// Card general styles
+// Cards
 .card {
     border: none;
     border-radius: 15px;
@@ -306,16 +363,17 @@ p {
     padding: 10px;
 }
 
-// Button styles
+// Boton
 .btn {
     padding: 12px;
     border-radius: 8px;
 }
 
-// Contact items grid
+// Grid contactos
 .contact-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 25px;
 }
 
 .lorem-paginas {
@@ -328,3 +386,22 @@ p {
     margin-top: 25px;
 }
 
+//etiquetas arcticle
+
+section {
+    div {
+      div {
+        div {
+          div {
+            article {
+              .card-text {
+                font-size: 3rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

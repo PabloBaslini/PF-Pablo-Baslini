@@ -1,59 +1,9 @@
 // reset, clases sueltas, tipografia, cosas que aplican a selectores en general
 
+//reset
+
 * {
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
 }
 
-// Body styles
-
-body {
-    background-image: url(../img/helsinki.jpg);
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    main {
-        margin-top: 100px;
-    }
-}
-
-.titulo-paginas {
-    font-size: 40px;
-    text-align: center;
-    color: $color-black;
-}
-
-#alineacion {
-    margin: 0% 10% 5% 10%;
-
-}
-
-.pie {
-    margin-top: 5%;
-}
-
-
-.promociones {
-    width: 12rem;                
-    height: 12rem;                    
-    background-color: $color-promo;   
-    border-radius: 50%;               
-    margin-left: 20%;               
-    margin-top: 20%;               
-    position: absolute;               
-    z-index: 10;                      
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1); 
-    display: flex;                    
-    justify-content: center;         
-    align-items: center;              
-    text-align: center;              
-    color: $color-black;                  
-    font-size: 1.6rem;                
-    font-weight: bold; 
-    transform:rotate(-45deg);
-
-}
