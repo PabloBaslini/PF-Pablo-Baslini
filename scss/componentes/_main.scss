@@ -1,3 +1,22 @@
+/* animacion del logo */
+.navbar img {
+    height: 50px; 
+    position: relative; 
+    animation: logo-slide-horizontal 1.5s ease-in-out; 
+}
+
+@keyframes logo-slide-horizontal {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(50vw); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
 .hero {
     text-align: center;
     font-weight: bold;
@@ -169,7 +188,7 @@ p {
     text-align: center;
     font-size: 30px;
     color: black;
-    padding: 35px;
+    
 
     &.contenido-paginas {
         margin-top: 25px;
@@ -265,27 +284,24 @@ p {
     @include flex-center;
     @include text-center(1.6rem, $color-texto, bold);
     transform: rotate(-45deg);
-  }
+    animation: loop-animation 1.5s infinite ease-in-out; 
+}
 
-  .promociones:hover {
-    transform: rotate(0deg) scale(1.1); 
-    background-color: orange; 
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    animation: backwards;
-  }
-
-  @keyframes hover-shine {
+@keyframes loop-animation {
     0% {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: rotate(-45deg) scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
     50% {
-      box-shadow: 0 8px 20px rgba(255, 165, 0, 0.8);
+        transform: rotate(0deg) scale(1.25); 
+        box-shadow: 0 8px 20px rgba(255, 165, 0, 0.8);
     }
     100% {
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        transform: rotate(-45deg) scale(1); 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
-  }
+}
+
 
 // Lorem paginas 
 .lorem-paginas {
