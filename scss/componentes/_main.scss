@@ -1,4 +1,85 @@
-//bloques comentados
+/* animacion del logo */
+.navbar img {
+    height: 50px; 
+    position: relative; 
+    animation: logo-slide-horizontal 1.5s ease-in-out; 
+}
+
+@keyframes logo-slide-horizontal {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(50vw); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+.hero {
+    text-align: center;
+    font-weight: bold;
+
+    div {
+        margin: 0px 25px 0px 25px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+        line-height: 1.2;
+
+    }
+
+    p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    .highlight {
+        align-items: center;
+        text-align: center;
+        font-size: 90px;
+        color: yellow;
+        ;
+        padding: 10px;
+    }
+}
+
+
+// Grid 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &-item {
+        text-align: center;
+        padding: 15px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            margin-top: 15px;
+            font-size: 1.3rem;
+        }
+    }
+
+    .img-grid {
+        height: 292px;
+        width: 381px;
+        border-radius: 5%;
+    }
+}
+
+// Tarjetas
 .tarjeta {
     display: flex;
     flex-direction: column;
@@ -6,35 +87,337 @@
     border-radius: 15px;
     background-color: white;
     align-items: center;
-  
-  .card-image {
-      width: 300px;
-      height: 300px;
-      border-radius: 5%;
-      margin-bottom: -57px;
-    }
-  
-  .cuerpo {
-      padding: 10px;
-      flex: 1 1 100%;
-      align-self: center;
-  
-      img {
+
+    .card-image {
+        width: 300px;
+        height: 300px;
         border-radius: 5%;
-        margin-bottom: 27px;
-      }
+        margin-bottom: -57px;
     }
-  
-  .pie {
-      background: black;
-      border-radius: 15px;
-      padding: 10px;
-      text-align: center;
-      width: 100%;
-  
-     a {
-        text-decoration: none;
-        color: white;
+
+    .cuerpo {
+        padding: 10px;
+        flex: 1 1 100%;
+        align-self: center;
+
+        img {
+            border-radius: 5%;
+            margin-bottom: 27px;
+        }
+    }
+
+    .pie {
+        background: white;
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+// Carousel
+.carousel-item {
+    >img {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        height: 500px;
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &-item {
+        text-align: center;
+        padding: 15px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            margin-top: 15px;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+//Animacion palabra DESIGN  
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.highlight {
+    font-weight: bold;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, font-size 0.3s ease, background-color 0.3s ease;
+}
+
+
+.highlight:hover {
+    transform: scale(2); 
+    font-size: 4.5em; 
+
+}
+
+
+// Parrrafo
+
+p {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    
+
+    &.contenido-paginas {
+        margin-top: 25px;
+    }
+}
+
+// Imagenes grid 
+.img-grid {
+    height: 292px;
+    width: 381px;
+    border-radius: 5%;
+}
+
+// Titulo
+.titulo {
+    color: rgb(10, 10, 10);
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+//tarjetas index
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 15px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: white;
+    align-items: center;
+
+    .card-image {
+        width: 300px;
+        height: 300px;
+        border-radius: 5%;
+        margin-bottom: -57px;
+    }
+
+    .cuerpo {
+        padding: 10px;
+        flex: 1 1 100%;
+        align-self: center;
+
+        img {
+            border-radius: 5%;
+            margin-bottom: 27px;
+        }
+    }
+
+    .pie {
+        background: black;
+        border-radius: 0px 0px 15px 15px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: "Oswald", sans-serif;
+        }
+    }
+}
+
+// Carousel item 
+.carousel-item {
+    >img {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        height: 500px;
+    }
+}
+
+.promociones {
+    width: 12rem;
+    height: 12rem;
+    background-color: $color-promo;
+    @include border-radius(50%);
+    margin-left: 20%;
+    margin-top: 20%;
+    position: absolute;
+    z-index: 10;
+    @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 1));
+    @include flex-center;
+    @include text-center(1.6rem, $color-texto, bold);
+    transform: rotate(-45deg);
+    animation: loop-animation 1.5s infinite ease-in-out; 
+}
+
+@keyframes loop-animation {
+    0% {
+        transform: rotate(-45deg) scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        transform: rotate(0deg) scale(1.25); 
+        box-shadow: 0 8px 20px rgba(255, 165, 0, 0.8);
+    }
+    100% {
+        transform: rotate(-45deg) scale(1); 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+// Lorem paginas 
+.lorem-paginas {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+// Grid servicios
+
+.grid-servicios {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 60px;
+    row-gap: 20px;
+    padding: 50px;
+
+    img {
+        height: 292px;
+        width: 381px;
+        border-radius: 5% 5% 0 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+        color: $color-black;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .titulo-tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 15px;
+        background-color: $color-white;
+        border-radius: 15px;
+    }
+}
+
+
+// Cards
+.card {
+    border: none;
+    border-radius: 15px;
+
+    &-nosotros {
+        padding: 20px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: #555;
+    }
+}
+
+// Form controls
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+// Boton
+.btn {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+// Grid contactos
+.contact-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 25px;
+}
+
+.lorem-paginas {
+
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: black;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+//etiquetas arcticle
+
+section {
+    div {
+      div {
+        div {
+          div {
+            article {
+              .card-text {
+                font-size: 3rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
       }
     }
   }
+  

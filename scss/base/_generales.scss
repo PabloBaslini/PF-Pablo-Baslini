@@ -1,21 +1,9 @@
-//informacion general reset tipografia clases sueltas selectores etc
-//aca iria la clase .botones, por ejemplo
-//creo que aca van las clases de  bootstrap
+// reset, clases sueltas, tipografia, cosas que aplican a selectores en general
+
+//reset
+
 * {
-    list-style: none;
-    margin: 1px;
-    padding: 0px;
-    text-decoration: none;
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
-  }
-  
-  body {
-    background-image: url(../img/helsinki.jpg);
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+}
+

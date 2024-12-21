@@ -1,1 +1,187 @@
-//variables bucle funciones condicionales
+// variables, condicionales, mixins, funciones, listas
+
+//variables de colores por colores y por aplicacion
+
+$color-fondo: #000;          // Color de fondo principal
+$color-texto: #000;          // Color principal del texto
+$color-destacado: #ff0;      // Color amarillo para elementos destacados
+$color-blanco: #fff;         // Blanco
+$color-sombra: rgba(0, 0, 0, 0.1); // Color para las sombras
+$color-promo: yellow;        // Color para promociones
+$color-footer: grey;         // Color para botones del footer
+$color-tarjeta: black;       // Color de fondo de la tarjeta
+$color-link: white;          //color blanco link
+$color-black:black;          //color negro gral
+$color-white:white;          //color blanco gral
+$color-grey:grey;            // Color de enlaces
+
+//mixins
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin grid-layout($columns: 1fr, $gap: 0) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+  }
+  
+  @mixin box-shadow($h-offset: 0, $v-offset: 4px, $blur: 10px, $color: $color-black) {
+    box-shadow: $h-offset $v-offset $blur $color;
+  }
+  
+  @mixin border-radius($radius: 8px) {
+    border-radius: $radius;
+  }
+  
+  @mixin background-image($url, $size: cover, $position: center, $repeat: no-repeat, $attachment: fixed) {
+    background-image: url($url);
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-attachment: $attachment;
+  }
+  
+  @mixin transition($property: all, $duration: 0.3s, $timing-function: ease) {
+    transition: $property $duration $timing-function;
+  }
+  
+  @mixin font-style($family: 'Oswald', $size: 16px, $color: black, $weight: normal) {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+  }
+  
+  @mixin position-center($type: absolute, $x: 50%, $y: 50%, $translate: true) {
+    position: $type;
+    left: $x;
+    top: $y;
+    @if $translate {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @mixin responsive-font($min-size: 16px, $max-size: 24px) {
+    font-size: $min-size;
+    @media (min-width: 768px) {
+      font-size: $max-size;
+    }
+  }
+
+  @mixin text-center($size: 16px, $color: black, $weight: normal) {
+    text-align: center;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+
+  }
+
+  // @includes y clases sueltas
+  
+  body {
+    @include background-image("../img/helsinki.jpg");
+    width: 100%;
+    height: auto;
+  }
+  
+  body main {
+    margin-top: 100px;
+  }
+  
+  .titulo-paginas {
+  @include text-center(40px, $color-texto, bold); 
+}
+  
+  #alineacion {
+    margin: 0% 10% 5% 10%;
+  }
+  
+  .pie {
+    margin-top: 5%;
+  }
+  
+  
+  header {
+    @include flex-center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: $color-fondo;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+  }
+  
+  header nav img {
+    width: 90px;
+    height: 70px;
+  }
+  
+  header nav div ul {
+    @include flex-center;
+  }
+  
+  .item-box {
+    padding: 15px 5px;
+    @include text-center(16px, $color-link);
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .hero {
+    @include text-center;
+    font-weight: bold;
+  }
+  
+  .hero div {
+    margin: 0px 25px 0px 25px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .hero .highlight {
+    @include text-center(90px, $color-destacado);
+    padding: 10px;
+  }
+  
+  .tarjeta .pie {
+    background: $color-tarjeta;
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .tarjeta .pie a {
+    text-decoration: none;
+    color: $color-link;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  .button-footer {
+    background-color: $color-footer;
+    color: $color-link;
+    padding: 3px 14px;
+    height: 33px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: auto;
+  }
+  
+

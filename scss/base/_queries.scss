@@ -1,58 +1,247 @@
 // media queries
-@media (max-width: 360px) {
-    .hero {
-      h1 {
-        flex-wrap: wrap;
-        font-size: 24px;
-      }
-  
-      p {
-        font-size: 18px;
-        padding: 15px;
-      }
+
+/* (360px) */
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 14px;
     }
-  
+
+    .titulo-paginas {
+        font-size: 28px;
+    }
+
+    .promociones {
+        width: 10rem;
+        height: 10rem;
+        font-size: 1.2rem;
+    }
+
     .grid {
-      grid-template-columns: 1fr;
-      padding: 20px;
-      gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
     }
-  
-    .footer-down {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+
+    .grid-item {
+        padding: 10px;
+        font-size: 0.9rem;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .grid-servicios {
-      grid-template-columns: 1fr;
+
+    header nav img {
+        width: 60px;
+        height: 50px;
     }
-  
-    .hero {
-      padding: 60px 20px;
-  
-      h1 {
-        font-size: 1.8rem;
-      }
+
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        gap: 30px;
+        padding: 15px 15px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
-  }
-  
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
+
+    .card {
+        border: none;
+        border-radius: 15px;
+
+        &-nosotros {
+            padding: 0px;
+        }
+
+        .card-body {
+            padding: 0px;
+        }
     }
-  
-    .grid-servicios {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .hero {
-      padding: 100px 20px 30px;
-  
-      p {
+
+    .card-text {
         font-size: 1.1rem;
-      }
+        line-height: 1.5;
+        color: #555;
     }
-  }
+
+
+    .hero {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    //footer
+
+    .footer-down {
+        display: flex;
+        height: 150px;
+        justify-content: space-between;
+        margin-top: 100px;
+        padding-left: 10px;
+        background-color: $color-black;
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: 15px;
+            margin-top: 25px;
+        }
+
+        iframe {
+            margin-top: 15px;
+            width: 360px;
+        }
+
+
+    }
+
+    .contact-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .button-footer {
+        background-color: $color-grey;
+        color: $color-white;
+        padding: 3px 14px;
+        height: 33px;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+    }
+
+
+    .footer-down {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    //oculta globo promociones
+
+    .promociones {
+        display: none;
+    }
+
+    //modifica alto carrousel bootstrap
+
+    .carousel-inner img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    //grid servicios
+
+
+    .grid-servicios {
+
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(1, 1fr);
+        width: 300px;
+        margin: 25px auto;
+        gap: 20px;
+        padding: 0%
+    }
+
+    .titulo-tarjetas {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .titulo-tarjetas img {
+        max-width: 100%;
+    }
+
+    .btn {
+        padding: 8px 12px;
+    }
+
+    .titulo-paginas {
+        padding: 5px;
+    }
+
+    .card-body {
+        padding: 8px;
+    }
+}
+
+/*  700px  */
+
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav img {
+        width: 70px;
+        height: 50px;
+    }
+
+    .titulo-paginas {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .promociones {
+        width: 9rem;
+        height: 9rem;
+        font-size: 1rem;
+    }
+
+    .grid-servicios {
+
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(1, 1fr);
+        width: 500px;
+        margin: 25px auto;
+        gap: 20px;
+        padding: 0%
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-items {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+}
+
+/* (1440px) */
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+
+    .titulo-paginas {
+        font-size: 48px;
+    }
+
+    .promociones {
+        width: 14rem;
+        height: 14rem;
+        font-size: 1.8rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 50px;
+    }
+
+    .grid-item {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    header nav img {
+        width: 120px;
+        height: 90px;
+    }
+}
