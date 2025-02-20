@@ -11,6 +11,35 @@
      align-items: center;
      font-family: "Oswald", sans-serif;
 
+     .cart-button {
+         color: white;
+     }
+
+     .dropdown-menu {
+         width: fit-content;
+         color: black;
+         padding: 10px;
+         max-height: 350px;
+         overflow-y: scroll;
+     }
+     .dropdown-menu li {
+         margin-bottom: 10px;
+     }
+
+     .dropdown-menu li:last-child {
+         margin-bottom: 0;
+     }
+
+     .dropdown-menu img {
+         border-radius: 50%;
+         margin-right: 10px;
+     }
+
+     .dropdown-menu p {
+         display: inline-block;
+         vertical-align: middle;
+     }
+
      nav {
          img {
              width: 90px;

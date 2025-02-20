@@ -135,6 +135,30 @@ header {
   align-items: center;
   font-family: "Oswald", sans-serif;
 }
+header .cart-button {
+  color: white;
+}
+header .dropdown-menu {
+  width: fit-content;
+  color: black;
+  padding: 10px;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+header .dropdown-menu li {
+  margin-bottom: 10px;
+}
+header .dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+header .dropdown-menu img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+header .dropdown-menu p {
+  display: inline-block;
+  vertical-align: middle;
+}
 header nav img {
   width: 90px;
   height: 70px;
@@ -155,12 +179,6 @@ header nav div ul {
 }
 
 /* animacion del logo */
-.navbar img {
-  height: 50px;
-  position: relative;
-  animation: logo-slide-horizontal 1.5s ease-in-out;
-}
-
 @keyframes logo-slide-horizontal {
   0% {
     transform: translateX(0);
